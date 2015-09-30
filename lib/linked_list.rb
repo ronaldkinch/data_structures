@@ -54,6 +54,7 @@ class LinkedList
     temp = @head
     @length.times do
       if temp.link.value == desired
+        @length -= 1
         out_node = temp.link
         temp.link = out_node.link
         out_node.link = nil
