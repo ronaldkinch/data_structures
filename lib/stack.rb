@@ -1,6 +1,5 @@
-Node = Struct.new(:value, :link)
-
 class Stack
+  Node = Struct.new(:value, :link)
   def initialize
     @head = nil
   end

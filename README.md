@@ -6,6 +6,8 @@ By Ronald Kinch.
 Collection of sample code for a number of classic data structures implemented in Ruby.
 
 Singly linked list
+Stack
+Queue
 
 ## Authors
 
