@@ -8,6 +8,11 @@ describe "stack list" do
     list.push "a"
     assert_equal list.pop, "a"
     assert_equal list.pop, 3
-    assert_raises(NoMethodError){list.pop}
+    assert_raises(RuntimeError){list.pop}
+    begin
+      list.pop
+    rescue RuntimeError => re
+      assert_equal re.message, "EmptyStackError"
+    end
   end
 end
