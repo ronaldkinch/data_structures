@@ -13,7 +13,7 @@ describe "queue list" do
     assert_equal list.size, 1
     assert_equal list.dequeue, "a"
     assert_equal list.size, 0
-    assert_raises(RuntimeError){list.dequeue}
+    assert_raises(RuntimeError) { list.dequeue }
     assert_equal list.size, 0
     begin
       list.dequeue
