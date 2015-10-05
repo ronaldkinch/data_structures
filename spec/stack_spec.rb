@@ -8,7 +8,7 @@ describe "stack list" do
     list.push "a"
     assert_equal list.pop, "a"
     assert_equal list.pop, 3
-    assert_raises(RuntimeError){list.pop}
+    assert_raises(RuntimeError) { list.pop }
     begin
       list.pop
     rescue RuntimeError => re
